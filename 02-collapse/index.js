@@ -6,7 +6,6 @@ window.addEventListener("DOMContentLoaded", () => {
         const collapsibleContent = parent.querySelector('.collapsible__content');
         const buttonHide = parent.querySelector('.collapsible__action--visible');
         const buttonShow = parent.querySelector('.collapsible__action--hidden');
-
         if (buttonHide.style.display === 'none') {
 
             buttonShow.style.display = 'none';
@@ -39,7 +38,6 @@ window.addEventListener("DOMContentLoaded", () => {
         const content = collapsible.querySelector('.collapsible__content');
         buttonToggle.addEventListener('click', handleToggle);
         buttonHide.style.display = 'none';
-
         content.animate([
             {
                 maxHeight: 0,
